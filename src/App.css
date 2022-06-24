@@ -1,0 +1,132 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh;
+  
+  
+}
+
+#background{
+  height: 100% ;
+  top:0;
+  right:0;
+  
+  width:100%;
+  z-index:0;
+  position:fixed;
+  background-color: #141414;
+}
+#cat_icon{
+  z-index:5;
+  position: absolute;
+  top:3%;
+  left:0.25%;
+  height:50px;
+  
+
+}
+#settings_icon{
+  z-index:5;
+  position: absolute;
+  top:21.75%;
+  left:0.8%;
+  height:35px;
+  
+
+}
+#add_song_icon{
+  z-index:5;
+  position: absolute;
+  top:45.5%;
+  left:0.8%;
+  height:35px;
+  
+
+}
+#socials_icon{
+  z-index:5;
+  position: absolute;
+  top:69.25%;
+  left:0.8%;
+  height:35px;
+  
+
+}
+#question_icon{
+  z-index:5;
+  position: absolute;
+  top:92%;
+  left:0.8%;
+  height:35px;
+  
+
+}
+
+#outside{
+ 
+}
+
+@font-face {
+   font-family: falconpunch;
+   src: url(falconpunch.ttf);
+}
+ 
+#title {
+   z-index:3;
+   top: 2;
+    right:32%;
+   justify-content:center;
+  text-align:center;
+  align-items:middle;
+  align-self:middle;
+   position: absolute;
+   font-family: falconpunch;
+   color: white;
+  font-size: 55px;
+  
+}
+#scroll-box {
+  border: 3px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+#scroll-text {
+  text-align: right;
+  position: absolute;
+  /* animation properties */
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(-100%); }
+  to { -moz-transform: translateX(100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(-100%); }
+  to { -webkit-transform: translateX(100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
